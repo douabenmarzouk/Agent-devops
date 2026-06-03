@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: job-app-frontend
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: job-app-frontend
+  template:
+    metadata:
+      labels:
+        app: job-app-frontend
+    spec:
+      containers:
+      - name: frontend
+        image: doua82400/job-app-frontend:latest
+        ports:
+        - containerPort: 80
+        env:
+        - name: REACT_APP_BACKEND_URL
+          value: "http://backend-service:5001"
+        resources:
+          requests:
+            memory: "64Mi"
+            cpu: "50m"
+          limits:
+            memory: "128Mi"
+            cpu: "100m"
