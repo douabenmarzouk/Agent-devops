@@ -37,14 +37,14 @@ agent-devops-rag/
 │       ├── deployment.yaml
 │       └── service.yaml
 │
-├── vector_store/          ← créé automatiquement
+├── vector_store/         
 │
-├── .env                   ← ta clé API Groq
-├── requirements.txt       ← bibliothèques Python
-├── indexer.py             ← indexe les documents
-├── agent.py               ← l'agent LangChain
-├── main.py                ← point d'entrée
-└── README.md              ← ce fichier
+├── .env                  
+├── requirements.txt       
+├── indexer.py            
+├── agent.py            
+├── main.py            
+└── README.md          
 ```
 
 ---
