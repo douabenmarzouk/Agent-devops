@@ -4,7 +4,7 @@ Agent intelligent d’audit de sécurité pour configurations Kubernetes et Dock
 
 📌 Description
 
-Ce projet analyse des fichiers YAML Kubernetes et Dockerfile, les compare à des standards de sécurité (NSA, NIST, OWASP) et génère des recommandations automatiques.
+Ce projet analyse des fichiers YAML Kubernetes et Dockerfile, les compare aux standards de sécurité (NSA, NIST, OWASP) et génère automatiquement des recommandations de sécurité.
 
 🛠️ Stack technique
 Python 3.10+
@@ -32,24 +32,24 @@ git clone <repo-url>
 cd agent-devops-rag
 2. Installer les dépendances
 pip install -r requirements.txt
-3. Ajouter la clé API Groq
+3. Configuration de l’environnement
 
-Créer un fichier .env :
+Créer un fichier .env à la racine du projet :
 
 GROQ_API_KEY=your_api_key_here
-📚 Indexer les documents
+📚 Indexation des documents
 python indexer.py
-🚀 Lancer l’agent
+🚀 Lancement de l’agent
 python main.py
 💬 Exemple d’utilisation
 Ce deployment.yaml est-il sécurisé ?
-Mon container tourne en root, est-ce dangereux ?
-Bonnes pratiques Docker selon OWASP ?
+Mon container tourne en root, est-ce risqué ?
+Quelles sont les bonnes pratiques Docker selon OWASP ?
 📖 Références
 NSA Kubernetes Hardening Guide
 NIST SP 800-190
-OWASP Docker Security
-Documentation Kubernetes
+OWASP Docker Security Cheat Sheet
+Documentation officielle Kubernetes
 👤 Auteur
 
-Projet personnel — RAG, DevSecOps et IA appliquée
+Projet personnel — RAG, DevSecOps et intelligence artificielle appliquée
